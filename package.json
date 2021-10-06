@@ -1,24 +1,13 @@
 {
-  "name": "freezing-smart-plan",
-  "version": "1.0.0",
-  "description": "Congelamento do plano automático",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/guiniederle/freezing-smart-plan.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/guiniederle/freezing-smart-plan/issues"
-  },
-  "homepage": "https://github.com/guiniederle/freezing-smart-plan#readme",
   "dependencies": {
-    "next": "^11.1.2",
+    "mongodb": "^3.5.9",
+    "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
