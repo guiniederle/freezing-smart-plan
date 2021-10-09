@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import clientPromise from '../lib/mongodb'
+import Image from 'next/image'
 
 export default function Home({ isConnected }) {
   return (
@@ -7,8 +8,6 @@ export default function Home({ isConnected }) {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-
-        <link href="/css/home.css" rel="stylesheet" />
       </Head>
 
       <main>
@@ -67,7 +66,12 @@ export default function Home({ isConnected }) {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+            <Image
+                src="/vercel.svg"
+                alt="Landscape picture"
+                width={500}
+                height={500}
+            />
         </a>
       </footer>
     </div>
